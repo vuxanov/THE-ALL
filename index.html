@@ -6,11 +6,11 @@
     <title>THE ALL</title>
     <script>
       (function () {
-        var k = "the-all-theme";
-        var last = sessionStorage.getItem(k);
-        var theme = last === "dark" ? "light" : last === "light" ? "dark" : "light";
+        var hour = new Date().getHours();
+        var theme = hour >= 18 || hour < 6 ? "dark" : "light";
+        var override = sessionStorage.getItem("the-all-theme-override");
+        if (override === "dark" || override === "light") theme = override;
         document.documentElement.setAttribute("data-theme", theme);
-        sessionStorage.setItem(k, theme);
       })();
     </script>
     <link rel="stylesheet" href="css/styles.css" />
