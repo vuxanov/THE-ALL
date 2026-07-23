@@ -157,6 +157,14 @@ a {
   transition: color 0.2s ease, opacity 0.2s ease, text-decoration-color 0.2s ease;
 }
 
+.contact__links a {
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
 .site-nav a {
   white-space: nowrap;
 }
@@ -251,14 +259,17 @@ a {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: var(--line-height);
 }
 
 .contact__email,
 .contact__instagram {
   margin: 0;
-  font-size: 20px;
-  font-weight: 800;
-  line-height: var(--line-height);
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
 }
 
 @media (max-width: 1200px) {
