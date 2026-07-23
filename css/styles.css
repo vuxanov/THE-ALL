@@ -149,7 +149,7 @@ a {
 }
 
 .site-nav a,
-.contact__email a {
+.contact__links a {
   color: inherit;
   text-decoration: underline;
   text-underline-offset: 4px;
@@ -162,13 +162,13 @@ a {
 }
 
 .site-nav a:hover,
-.contact__email a:hover {
+.contact__links a:hover {
   color: var(--color-link-hover);
   text-decoration-color: var(--color-link-hover);
 }
 
 .site-nav a:active,
-.contact__email a:active {
+.contact__links a:active {
   opacity: 0.45;
 }
 
@@ -247,15 +247,18 @@ a {
   line-height: var(--line-height);
 }
 
-.contact__email {
+.contact__links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact__email,
+.contact__instagram {
   margin: 0;
   font-size: 20px;
   font-weight: 800;
   line-height: var(--line-height);
-}
-
-.contact__email a {
-  text-decoration: underline;
 }
 
 @media (max-width: 1200px) {
