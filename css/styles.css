@@ -354,6 +354,16 @@ a {
   line-height: var(--line-height);
 }
 
+#process .section-heading {
+  margin-bottom: 80px;
+}
+
+#process .about-copy {
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .about-copy {
   max-width: 593px;
   margin: 0;
